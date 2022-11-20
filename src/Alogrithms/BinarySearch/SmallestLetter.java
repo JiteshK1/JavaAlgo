@@ -6,15 +6,16 @@ public class SmallestLetter {
     }
 
     public  static  char smallest(char[] letters , char target){
-        int s = letters[0];
+        int s = 0;
         int e = letters.length -1 ;
 
         while (s <= e){
             int mid = s + (e - s)/2;
-            if (target > letters[mid]){
-                s = mid + 1;
-            }else {
+            if (target < letters[mid]){
                 e = mid - 1;
+            }else {
+                s = mid + 1;
+
             }
 
         }

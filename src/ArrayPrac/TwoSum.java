@@ -1,3 +1,5 @@
+package ArrayPrac;
+
 import java.util.Arrays;
 
 public class TwoSum {

@@ -2,6 +2,8 @@ package Alogrithms.BinarySearch;
 
 public class Mountain {
     public static void main(String[] args) {
+int[] arr ={1,2,3,5,6,4,3,2};
+        System.out.println(peakIndexInMountainArray(arr));
 
     }
 
@@ -23,4 +25,5 @@ public class Mountain {
         }
         return start; // or can return end;
     }
+
 }

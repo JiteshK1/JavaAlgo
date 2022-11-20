@@ -1,4 +1,6 @@
-    import java.util.Arrays;
+package ArrayPrac;
+
+import java.util.Arrays;
 
 public class FlippingImage {
     public static void main(String[] args) {

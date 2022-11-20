@@ -1,3 +1,5 @@
+package ArrayPrac;
+
 public class Rotation {
     public static void main(String[] args) {
 int[][] arr={{0,1},{1,0}};
@@ -50,6 +52,10 @@ int[][] target={{1,0},{0,1}};
             end--;
         }
     }
+    // key points : m = number of rows, n = number of cols
+// rotate 90 deg once ->   i, j <--> j,  m - i - 1
+// rotate 90 deg twice ->  i, j <--> m - i - 1, n - j - 1
+// rotate 90 deg thrice -> i, j <--> n - j - 1, i
     public boolean FindRotation2(int[][] mat, int[][] target) {
 
         int m = mat.length;
