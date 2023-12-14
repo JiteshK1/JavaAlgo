@@ -27,13 +27,21 @@ public class Main {
 //          cll.delete(22);
 //        cll.display();
 
-        ll.insertFirst(1);
-        ll.insertFirst(2);
-        ll.insertFirst(4);
-        ll.insertLast(55);
-        ll.display();
-      ll.insertRec(2,88);
-        ll.display();
+//        ll.insertFirst(1);
+//        ll.insertFirst(2);
+//        ll.insertFirst(4);
+//        ll.insertLast(55);
+//        ll.display();
+//      ll.insertRec(2,88);
+//        ll.display();
+
+        LL list = new LL();
+        for (int i = 7; i >0 ; i--) {
+            list.insertLast(i);
+        }
+        list.display();
+
+        list.display();
 
     }
 }
