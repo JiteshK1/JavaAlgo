@@ -12,5 +12,6 @@ public class SpecialPos {
 
             }
         }
+        return 0;
     }
 }
