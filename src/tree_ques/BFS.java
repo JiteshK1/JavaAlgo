@@ -402,7 +402,8 @@ public class BFS {
             return false;
         }
 
-        if (root.val == sum && root.left == null && root.right == null) {
+        if (root.val == sum && root.left
+                == null && root.right == null) {
             return true;
         }
 

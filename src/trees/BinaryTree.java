@@ -1,5 +1,6 @@
 package trees;
 
+import java.util.*;
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -66,5 +67,24 @@ public class BinaryTree {
             System.out.println(node.value);
         }
         prettyDisplay(node.left,level+1);
+    }
+    public List<String> binaryTreePaths(Node root) {
+        List<String> ans = new ArrayList<>();
+        helper(root,ans,"");
+        return ans;
+    }
+    public void helper(Node node,List<String> ans, String str ){
+        if(node.left == null & node.right==null){
+            ans.add(str);
+            return;
+        }
+
+        if (node.left !=null){
+            helper(node.left,ans,str+node.value);
+        }
+        if(node.right!=null){
+            helper(node.right,ans,str+node.value);
+        }
+
     }
 }
